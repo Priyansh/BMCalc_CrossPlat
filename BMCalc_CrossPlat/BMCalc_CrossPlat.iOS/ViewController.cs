@@ -15,6 +15,9 @@ namespace BMCalc_CrossPlat.iOS
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
+
+            btnCalculateBMI.TouchUpInside += BtnCalculateBMI_TouchUpInside;
+
 			// Perform any additional setup after loading the view, typically from a nib.
 			Button.AccessibilityIdentifier = "myButton";
 			Button.TouchUpInside += delegate {
@@ -23,7 +26,16 @@ namespace BMCalc_CrossPlat.iOS
 			};
 		}
 
-		public override void DidReceiveMemoryWarning ()
+        private void BtnCalculateBMI_TouchUpInside(object sender, EventArgs e)
+        {
+            float height = float.Parse(txtHeight.Text);
+            float weight = float.Parse(txtWeight.Text);
+            float bmiResult = weight / (height * height);
+
+            lblBMI.Text = bmiResult.ToString();
+        }
+
+        public override void DidReceiveMemoryWarning ()
 		{
 			base.DidReceiveMemoryWarning ();
 			// Release any cached data, images, etc that aren't in use.

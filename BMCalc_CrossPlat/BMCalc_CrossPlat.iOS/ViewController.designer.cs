@@ -1,27 +1,74 @@
-﻿//
-// This file has been generated automatically by MonoDevelop to store outlets and
-// actions made in the Xcode designer. If it is removed, they will be lost.
-// Manual changes to this file may not be handled correctly.
+﻿// WARNING
+//
+// This file has been generated automatically by Visual Studio from the outlets and
+// actions declared in your storyboard file.
+// Manual changes to this file will not be maintained.
 //
 using Foundation;
+using System;
 using System.CodeDom.Compiler;
 using UIKit;
 
 namespace BMCalc_CrossPlat.iOS
 {
-	[Register ("ViewController")]
-	partial class ViewController
-	{
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		UIButton Button { get; set; }
-        
-		void ReleaseDesignerOutlets ()
-		{
-			if (Button != null) {
-				Button.Dispose ();
-				Button = null;
-			}
-		}
-	}
+    [Register ("ViewController")]
+    partial class ViewController
+    {
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton btnCalculateBMI { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton btnShowDetails { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton Button { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel lblBMI { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UITextField txtHeight { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UITextField txtWeight { get; set; }
+
+        void ReleaseDesignerOutlets ()
+        {
+            if (btnCalculateBMI != null) {
+                btnCalculateBMI.Dispose ();
+                btnCalculateBMI = null;
+            }
+
+            if (btnShowDetails != null) {
+                btnShowDetails.Dispose ();
+                btnShowDetails = null;
+            }
+
+            if (Button != null) {
+                Button.Dispose ();
+                Button = null;
+            }
+
+            if (lblBMI != null) {
+                lblBMI.Dispose ();
+                lblBMI = null;
+            }
+
+            if (txtHeight != null) {
+                txtHeight.Dispose ();
+                txtHeight = null;
+            }
+
+            if (txtWeight != null) {
+                txtWeight.Dispose ();
+                txtWeight = null;
+            }
+        }
+    }
 }
