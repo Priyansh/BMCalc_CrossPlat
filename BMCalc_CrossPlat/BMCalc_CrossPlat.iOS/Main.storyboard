@@ -9,7 +9,7 @@
             <objects>
                 <navigationController id="701" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="703">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -28,7 +28,7 @@
                         <viewControllerLayoutGuide type="bottom" id="1455"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1458">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <subviews>
@@ -61,7 +61,7 @@
                                 </state>
                                 <connections/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21.5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1556" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1556" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
                                 <rect key="frame" x="100" y="384" width="179" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="highlightedColor" colorSpace="calibratedRGB" red="1" green="0" blue="0" alpha="1"/>
@@ -74,12 +74,12 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue id="1669" destination="1565" kind="show"/>
+                                    <segue id="2556" destination="1565" kind="show"/>
                                 </connections>
                             </button>
                         </subviews>
                     </view>
-                    <navigationItem title="Frendel Kitchens-Installer App" id="1546" key="navigationItem"/>
+                    <navigationItem title="BMICalc" id="1546" key="navigationItem"/>
                     <connections>
                         <outlet property="txtHeight" destination="1551" id="name-outlet-1551"/>
                         <outlet property="txtWeight" destination="1553" id="name-outlet-1553"/>
@@ -96,16 +96,40 @@
         </scene>
         <scene sceneID="1564">
             <objects>
-                <viewController id="1565" sceneMemberID="viewController" customClass="DetailViewController">
+                <viewController id="1565" sceneMemberID="viewController" customClass="DetailViewController" title="BMIResult">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1562"/>
                         <viewControllerLayoutGuide type="bottom" id="1563"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1566">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Normal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2006" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="128" y="316" width="118" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <color key="highlightedColor" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
+                                </variation>
+                                <color key="textColor" colorSpace="calibratedRGB" red="0.29411764705882354" green="0.615686274509804" blue="0.83921568627450982" alpha="1"/>
+                            </label>
+                        </subviews>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="2006"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="2006"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="lblResult" destination="2006" id="name-outlet-2006"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1567" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -114,5 +138,6 @@
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedScreenMetrics key="destination" type="retina47"/>
+        <simulatedOrientationMetrics key="orientation"/>
     </simulatedMetricsContainer>
 </document>

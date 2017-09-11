@@ -6,7 +6,7 @@ namespace BMCalc_CrossPlat.iOS
 {
 	public partial class ViewController : UIViewController
 	{
-		
+        float bmi = 21.5f;
 		public ViewController (IntPtr handle) : base (handle)
 		{
 		}
@@ -28,10 +28,13 @@ namespace BMCalc_CrossPlat.iOS
 
         private void BtnCalculateBMI_TouchUpInside(object sender, EventArgs e)
         {
-            float height = float.Parse(txtHeight.Text);
-            float weight = float.Parse(txtWeight.Text);
-            float bmi = weight / (height * height);
-            lblBMI.Text = bmi.ToString();
+            if(txtHeight.Text.Length > 0 && txtWeight.Text.Length > 0)
+            {
+                float height = float.Parse(txtHeight.Text);
+                float weight = float.Parse(txtWeight.Text);
+                bmi = weight / (height * height);
+                lblBMI.Text = bmi.ToString();
+            }
         }
 
         public override void DidReceiveMemoryWarning ()
@@ -44,6 +47,13 @@ namespace BMCalc_CrossPlat.iOS
         {
             base.TouchesBegan(touches, evt);
             this.View.EndEditing(true);
+        }
+
+        public override void PrepareForSegue(UIStoryboardSegue segue, NSObject sender)
+        {
+            base.PrepareForSegue(segue, sender);
+            var detailViewController = segue.DestinationViewController as DetailViewController;
+            detailViewController.bmi = this.bmi;
         }
     }
 }
