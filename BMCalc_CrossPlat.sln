@@ -11,6 +11,8 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "BMCalc_CrossPlat", "BMCalc_
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		BMCalc_CrossPlat\BMCalc_CrossPlat\BMCalc_CrossPlat.projitems*{802c15ba-e631-43cd-8361-f5b425b559f8}*SharedItemsImports = 4
+		BMCalc_CrossPlat\BMCalc_CrossPlat\BMCalc_CrossPlat.projitems*{b08e4ae8-d348-4c3a-b388-ce95e50d7be9}*SharedItemsImports = 4
 		BMCalc_CrossPlat\BMCalc_CrossPlat\BMCalc_CrossPlat.projitems*{dc704f78-daae-4532-8301-355ea4ec0110}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

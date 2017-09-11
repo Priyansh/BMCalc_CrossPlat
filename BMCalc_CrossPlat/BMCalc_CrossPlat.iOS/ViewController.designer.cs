@@ -24,11 +24,15 @@ namespace BMCalc_CrossPlat.iOS
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIButton Button { get; set; }
+        UIKit.UILabel lblBMI { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UILabel lblBMI { get; set; }
+        UIKit.UILabel lblHeight { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel lblWeight { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -50,14 +54,19 @@ namespace BMCalc_CrossPlat.iOS
                 btnShowDetails = null;
             }
 
-            if (Button != null) {
-                Button.Dispose ();
-                Button = null;
-            }
-
             if (lblBMI != null) {
                 lblBMI.Dispose ();
                 lblBMI = null;
+            }
+
+            if (lblHeight != null) {
+                lblHeight.Dispose ();
+                lblHeight = null;
+            }
+
+            if (lblWeight != null) {
+                lblWeight.Dispose ();
+                lblWeight = null;
             }
 
             if (txtHeight != null) {
