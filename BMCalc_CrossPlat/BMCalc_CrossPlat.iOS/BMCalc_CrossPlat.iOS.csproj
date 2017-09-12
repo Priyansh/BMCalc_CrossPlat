@@ -118,6 +118,10 @@
     <Compile Include="BooksTableviewController.designer.cs">
       <DependentUpon>BooksTableviewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="BookTableViewCell.cs" />
+    <Compile Include="BookTableViewCell.designer.cs">
+      <DependentUpon>BookTableViewCell.cs</DependentUpon>
+    </Compile>
     <Compile Include="DetailViewController.cs" />
     <Compile Include="DetailViewController.designer.cs">
       <DependentUpon>DetailViewController.cs</DependentUpon>
