@@ -114,6 +114,10 @@
     <None Include="Entitlements.plist" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BooksTableviewController.cs" />
+    <Compile Include="BooksTableviewController.designer.cs">
+      <DependentUpon>BooksTableviewController.cs</DependentUpon>
+    </Compile>
     <Compile Include="DetailViewController.cs" />
     <Compile Include="DetailViewController.designer.cs">
       <DependentUpon>DetailViewController.cs</DependentUpon>
