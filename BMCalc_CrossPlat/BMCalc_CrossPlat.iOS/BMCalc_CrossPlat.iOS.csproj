@@ -114,6 +114,10 @@
     <None Include="Entitlements.plist" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BookDetailController.cs" />
+    <Compile Include="BookDetailController.designer.cs">
+      <DependentUpon>BookDetailController.cs</DependentUpon>
+    </Compile>
     <Compile Include="BooksTableviewController.cs" />
     <Compile Include="BooksTableviewController.designer.cs">
       <DependentUpon>BooksTableviewController.cs</DependentUpon>
@@ -132,6 +136,12 @@
     <Compile Include="ViewController.designer.cs">
       <DependentUpon>ViewController.cs</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Images\Green.jpg" />
+    <BundleResource Include="Images\CTop.jpg" />
+    <Content Include="Images\Range.gif" />
+    <Content Include="Images\Sink.gif" />
   </ItemGroup>
   <Import Project="..\BMCalc_CrossPlat\BMCalc_CrossPlat.projitems" Label="Shared" Condition="Exists('..\BMCalc_CrossPlat\BMCalc_CrossPlat.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

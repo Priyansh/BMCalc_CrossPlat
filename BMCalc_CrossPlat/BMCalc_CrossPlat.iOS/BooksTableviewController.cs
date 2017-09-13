@@ -15,25 +15,29 @@ namespace BMCalc_CrossPlat.iOS
             {
                 Author = "Priyansh Shah",
                 Name = "My Life & My Journey",
-                Year = 1995
+                Year = 1995,
+                ImagePath = "Images/CTop.jpg"
             });
             bookList.Add(new Book()
             {
                 Author = "Mansi Shah",
                 Name = "Guelph Journey begins",
-                Year = 2000
+                Year = 2000,
+                ImagePath="Images/Green.jpg"
             });
             bookList.Add(new Book()
             {
                 Author = "Nancy Shah",
                 Name = "Toronto Journey begins",
-                Year = 2002
+                Year = 2002,
+                ImagePath="Images/Range.gif"
             });
             bookList.Add(new Book()
             {
                 Author = "Rahul Shah",
                 Name = "My story My Life",
-                Year = 2009
+                Year = 2009,
+                ImagePath="Images/Sink.gif"
             });
 
         }
@@ -56,11 +60,21 @@ namespace BMCalc_CrossPlat.iOS
             cell.BookData = data;
             return cell;
         }
+
+        public override void PrepareForSegue(UIStoryboardSegue segue, NSObject sender)
+        {
+            base.PrepareForSegue(segue, sender);
+            if(segue.Identifier == "DetailsSegue")
+            {
+                var navigationController = segue.DestinationViewController as BookDetailController;
+            }
+        }
     }
     public class Book
     {
         public string Name;
         public string Author;
         public int Year;
+        public string ImagePath;
     }
 }
