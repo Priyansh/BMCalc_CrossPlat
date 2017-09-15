@@ -16,6 +16,10 @@ namespace BMCalc_CrossPlat.iOS
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton btnContacts { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIImageView imgBookImage { get; set; }
 
         [Outlet]
@@ -24,6 +28,11 @@ namespace BMCalc_CrossPlat.iOS
 
         void ReleaseDesignerOutlets ()
         {
+            if (btnContacts != null) {
+                btnContacts.Dispose ();
+                btnContacts = null;
+            }
+
             if (imgBookImage != null) {
                 imgBookImage.Dispose ();
                 imgBookImage = null;
