@@ -226,10 +226,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="3418" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="20" y="57" width="336" height="427"/>
+                                <rect key="frame" x="20" y="68" width="336" height="457"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3419" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="20" y="503" width="119" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3419" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="20" y="533" width="330" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17" weight="semibold"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -248,6 +248,10 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="lblSelectedBookName" destination="3419" id="name-outlet-3419"/>
+                        <outlet property="imgBookImage" destination="3418" id="name-outlet-3418"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3416" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

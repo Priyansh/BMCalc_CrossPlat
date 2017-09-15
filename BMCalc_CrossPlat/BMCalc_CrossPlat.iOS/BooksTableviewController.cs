@@ -67,6 +67,12 @@ namespace BMCalc_CrossPlat.iOS
             if(segue.Identifier == "DetailsSegue")
             {
                 var navigationController = segue.DestinationViewController as BookDetailController;
+                if(navigationController != null)
+                {
+                    var rowPath = TableView.IndexPathForSelectedRow;
+                    var selectedData = bookList[rowPath.Row];
+                    navigationController.SelectedBook = selectedData;
+                }
             }
         }
     }

@@ -14,8 +14,25 @@ namespace BMCalc_CrossPlat.iOS
     [Register ("BookDetailController")]
     partial class BookDetailController
     {
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIImageView imgBookImage { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel lblSelectedBookName { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
+            if (imgBookImage != null) {
+                imgBookImage.Dispose ();
+                imgBookImage = null;
+            }
+
+            if (lblSelectedBookName != null) {
+                lblSelectedBookName.Dispose ();
+                lblSelectedBookName = null;
+            }
         }
     }
 }
