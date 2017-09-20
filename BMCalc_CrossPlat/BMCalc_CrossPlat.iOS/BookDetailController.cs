@@ -18,5 +18,6 @@ namespace BMCalc_CrossPlat.iOS
             lblSelectedBookName.Text = SelectedBook.Name;
             imgBookImage.Image = UIImage.FromFile(SelectedBook.ImagePath);
         }
+
     }
 }

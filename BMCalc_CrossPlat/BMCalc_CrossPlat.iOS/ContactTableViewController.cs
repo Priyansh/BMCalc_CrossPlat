@@ -8,6 +8,9 @@ namespace BMCalc_CrossPlat.iOS
     {
         public ContactTableViewController (IntPtr handle) : base (handle)
         {
+
         }
+
+        
     }
 }

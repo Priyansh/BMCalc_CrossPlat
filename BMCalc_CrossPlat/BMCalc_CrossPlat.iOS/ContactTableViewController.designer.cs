@@ -14,5 +14,8 @@ namespace BMCalc_CrossPlat.iOS
     [Register ("ContactTableViewController")]
     partial class ContactTableViewController
     {
+        void ReleaseDesignerOutlets ()
+        {
+        }
     }
 }
