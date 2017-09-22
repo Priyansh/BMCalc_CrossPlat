@@ -366,12 +366,6 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9101" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="306" y="26" width="69" height="30"/>
-                                <state key="normal" title="Save">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="9156" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Full Name" fixedFrame="YES">
                                 <rect key="frame" x="16" y="81" width="352" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -382,19 +376,22 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="9436" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="39" y="210" width="299" height="313"/>
+                            </imageView>
                         </subviews>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="9101"/>
                                 <exclude reference="9156"/>
                                 <exclude reference="9157"/>
+                                <exclude reference="9436"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="9101"/>
                                 <include reference="9156"/>
                                 <include reference="9157"/>
+                                <include reference="9436"/>
                             </mask>
                         </variation>
                     </view>
